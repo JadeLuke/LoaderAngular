@@ -1,0 +1,20 @@
+.loader {
+    width: 120px;
+    height: 20px;
+    -webkit-mask: linear-gradient(90deg,#000 70%,#0000 0) left/20% 100%;
+    background:
+     linear-gradient(#000 0 0) left -25% top 0 /20% 100% no-repeat
+     #ddd;
+    animation: l7 1s infinite steps(6);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -moz-transform: translate(-50%, -50%); /* Firefox */
+    -ms-transform: translate(-50%, -50%);  /* IE 9 */
+    -webkit-transform: translate(-50%, -50%); /* Safari and Chrome*/
+    -o-transform: translate(-50%, -50%); /* Opera */
+    transform: translate(-50%, -50%);
+  }
+  @keyframes l7 {
+      100% {background-position: right -25% top 0}
+  }
